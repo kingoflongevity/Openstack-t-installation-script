@@ -3,7 +3,7 @@
 #装前须知  
 1.双网卡 自动选择有网络的那张卡为外网网卡  
 2.evn.sh 为环境脚本，可以修改管理密码  
-3.运行脚本前配置好hosts映射  
+3.运行脚本前配置好hosts映射为内网管理网络ip  
 4.运行脚本base-controller时修改时钟同步配置sed -i 's/\#allow.*/allow 192.168.100.0\/24/g' /etc/chrony.conf 为你的内网管理网络网段  
 5.修改计算节点novncproxy_base_url = http://controller:6080/vnc_auto.html controller为你控制节点ip地址  
 6.在执行完2个nova脚本后请在控制节点重复执行命令  
