@@ -9,4 +9,4 @@
 6.在执行完2个nova脚本后请在控制节点重复执行命令  
 openstack compute service list --service nova-compute(此命令执行后会出现nova节点信息，如未出现，请重启compute节点)  
 su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova  
-7.所有命令均以./脚本名.sh执行  
+7.执行脚本均以./脚本名.sh执行  
