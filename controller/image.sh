@@ -1,5 +1,5 @@
 #!/bin/bash
-source /root/evn.sh
+source /root/controller/evn.sh
 source /root/admin-openrc
 mysql -uroot -p$password -e "CREATE DATABASE glance;"
 mysql -uroot -p$password -e " GRANT ALL PRIVILEGES ON glance.* TO 'glance'@'localhost' \
