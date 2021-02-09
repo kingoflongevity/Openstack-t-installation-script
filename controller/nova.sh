@@ -1,5 +1,5 @@
 #!/bin/bash
-source $(pwd)/parameter.sh
+source $(pwd)/evn.sh
 source $(pwd)/../admin-openrc
 mysql -uroot -p$password -e "CREATE DATABASE nova_api;"
 mysql -uroot -p$password -e "CREATE DATABASE nova;"
