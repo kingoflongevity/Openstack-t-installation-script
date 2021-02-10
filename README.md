@@ -12,7 +12,7 @@ su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
 7.执行脚本前请赋予脚本可执行权限且均以./脚本名.sh执行  
 8.keystone装完记得重启    
 
-=============================================================================   
+===========================================================================   
 
 Install the most basic open stack service two nodes. Of course, I will continue to update the installation scripts of other components
 
