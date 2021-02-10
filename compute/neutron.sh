@@ -1,5 +1,8 @@
 #!/bin/bash
 source /root/compute/evn.sh
+echo -e "net.bridge.bridge-nf-call-iptables = 1\nnet.bridge.bridge-nf-call-ip6tables = 1 " >>/etc/sysctl.conf
+modprobe br_netfilter
+sysctl -p
 yum install openstack-neutron-linuxbridge ebtables ipset -y
 cat>/etc/neutron/neutron.conf<<EOF
 [DEFAULT]
