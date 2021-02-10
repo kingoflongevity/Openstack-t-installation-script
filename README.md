@@ -11,7 +11,7 @@ openstack compute service list --service nova-compute(此命令执行后会出�
 su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova  
 7.执行脚本前请赋予脚本可执行权限且均以./脚本名.sh执行  
 8.keystone装完记得重启
--========================================================================================================
+============================================================================================
 Install the most basic open stack service two nodes. Of course, I will continue to update the installation scripts of other components
 
 #Notice before installation
@@ -28,9 +28,9 @@ Install the most basic open stack service two nodes. Of course, I will continue 
 
 6. After executing two Nova scripts, please repeat the command in the control node
 
-Openstack compute service list -- service Nova compute
+   Openstack compute service list -- service Nova compute
 
-su -s /bin/sh -c "nova-manage cell_ v2 discover_ hosts --verbose" nova
+   su -s /bin/sh -c "nova-manage cell_ v2 discover_ hosts --verbose" nova
 
 7. Before executing the script, please give the script executable permission and execute with. / script name. Sh
 
