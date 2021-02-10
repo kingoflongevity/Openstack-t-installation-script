@@ -1,5 +1,5 @@
 #!/bin/bash
-source /root/compute/parameter.sh
+source /root/compute/evn.sh
 yum install openstack-nova-compute -y
 cat>/etc/nova/nova.conf<<EOF
 [DEFAULT]
