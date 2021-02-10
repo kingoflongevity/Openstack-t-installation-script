@@ -1,6 +1,9 @@
 #!/bin/bash
 source /root/controller/evn.sh
 source /root/admin-openrc
+echo -e "net.bridge.bridge-nf-call-iptables = 1\nnet.bridge.bridge-nf-call-ip6tables = 1 " >>/etc/sysctl.conf
+modprobe br_netfilter
+sysctl -p
 mysql -uroot -p$password -e "CREATE DATABASE neutron;"
 mysql -uroot -p$password -e "GRANT ALL PRIVILEGES ON neutron.* TO 'neutron'@'localhost' \
   IDENTIFIED BY \"$password\";"
