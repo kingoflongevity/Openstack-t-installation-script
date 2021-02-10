@@ -1,4 +1,4 @@
-# openstack-T
+# Openstack-t installation script
 安装最基本的open stack服务双节点，当然我会继续更新其他组件的安装脚本  
 #装前须知  
 1.双网卡 自动选择有网络的那张卡为外网网卡  
