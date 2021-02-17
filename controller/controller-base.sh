@@ -4,7 +4,7 @@ sed -i '7s/enforcing/disabled/g'  /etc/selinux/config
 yum install epel-release -y
 yum install vim crudini expect net-tools ntpdate -y
 ntpdate ntp1.aliyun.com
-source /root/evn.sh
+source /root/controller/evn.sh
 yum install chrony -y
 sed -i 's/^server/#&/g' /etc/chrony.conf
 sed -i '7iserver controller iburst' /etc/chrony.conf
