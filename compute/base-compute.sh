@@ -1,6 +1,7 @@
 #！bin/bash
 systemctl disable firewalld && systemctl stop firewalld
 sed -i '7s/enforcing/disabled/g'  /etc/selinux/config
+setenforce 0
 yum install epel-release -y
 yum install crudini expect net-tools vim -y
 yum install ntpdate -y
